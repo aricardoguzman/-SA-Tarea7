@@ -8,7 +8,7 @@ def wrap_html(message):
         <body>
             <div style='font-size:120px;'>
             <center>
-                <image height="200" width="800" src="https://www.akamai.com/es/es/multimedia/images/article/akamai-dev-ops-overview-image.jpg?imwidth=1366">
+                <image height="800" width="800" src="https://www.akamai.com/es/es/multimedia/images/article/akamai-dev-ops-overview-image.jpg?imwidth=1366">
                 <br>
                 {0}<br>
             </center>
@@ -19,7 +19,7 @@ def wrap_html(message):
 
 @app.route('/')
 def hello_world():
-    message = 'Hello SA T7!'
+    message = 'Hola T7 - SA!'
     html = wrap_html(message)
     return html
 

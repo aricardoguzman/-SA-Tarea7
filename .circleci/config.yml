@@ -20,7 +20,7 @@ jobs:
             . helloworld/bin/activate
             pip install --no-cache-dir -r requirements.txt
       - run:
-          name: Run Tests
+          name: Correr pruebas
           command: |
             . helloworld/bin/activate
             python test_hello_world.py
