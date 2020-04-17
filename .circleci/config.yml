@@ -15,7 +15,7 @@ jobs:
           name: Setup VirtualEnv
           command: |
             echo 'export TAG=0.1.${CIRCLE_BUILD_NUM}' >> $BASH_ENV
-            echo 'export IMAGE_NAME=python-circleci-docker' >> $BASH_ENV
+            echo 'export IMAGE_NAME=tarea7-sa' >> $BASH_ENV
             virtualenv helloworld
             . helloworld/bin/activate
             pip install --no-cache-dir -r requirements.txt
@@ -37,4 +37,4 @@ jobs:
       - run:
           name: Deploy app to GCP via docker
           command: |
-            ssh -o a.ricardoguzman@35.192.155.141 "/bin/bash ./deploy_app.sh $DOCKER_LOGIN$IMAGE_NAME:$TAG"
+            ssh a.ricardoguzman@35.192.155.141 "/bin/bash ./deploy_app.sh $DOCKER_LOGIN$IMAGE_NAME:$TAG"
