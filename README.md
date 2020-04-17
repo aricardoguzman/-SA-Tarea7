@@ -20,7 +20,7 @@ Se debe linkear las credenciales de cada servicio a utilizar
 
 Generar un par de llaves públicas y privadas en [8wifi.org](https://8gwifi.org/sshfunctions.jsp). Ingresar a [circleci.com/dashboard](https://circleci.com/dashboard), configuración del proyecto a utilizar y luego en SSH Permissions > ADD SSH KEY
 
-![image info](https://drive.google.com/open?id=1qKleckHoFLWvNYCLn_iZ25a9OXYGAK04)
+![image info](./docs/img1.png)
 
 Hostname será el nombre generado del lado de google cloud.
 
@@ -29,7 +29,7 @@ Además deben generarse las variables de entorno para Docker Hub, donde
   - DOCKER_LOGIN : Docker Hub username
   - DOCKER_PWD : Docker Hub password
 
-![image info](https://drive.google.com/open?id=1gLPLRlL-Qd0Iwy0D63E6MzCu8cCRQpog)
+![image info](./docs/img2.png)
 
 
 ### Explicación de archivo config.yml
