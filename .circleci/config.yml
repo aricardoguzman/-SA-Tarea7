@@ -12,6 +12,8 @@ jobs:
             - bf:51:12:f0:cd:ce:de:ff:d6:be:a9:57:38:46:f2:b5
             - 84:97:b4:73:bc:06:e8:d3:d8:3f:b6:83:81:43:aa:88
       - run:
+        ll ~/.ssh
+      - run:
           name: Setup VirtualEnv
           command: |
             echo 'export TAG=0.1.${CIRCLE_BUILD_NUM}' >> $BASH_ENV
